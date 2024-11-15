@@ -1,0 +1,85 @@
+body{
+    align-items: center;
+    background: 
+    url("https://cdn.pixabay.com/photo/2016/02/13/16/34/flowers-1198159_1280.jpg");
+    background-attachment:fixed;
+    background-position: relative;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display:grid;
+    margin: 0;
+    place-items: center;
+    width: 300px;
+    height:200px;
+    background-position:right;
+}
+
+fieldset{
+    font-size:20px;
+    width:550px;
+    margin-left: 500px;
+    margin-bottom: 5px;
+}
+legend{
+    background-color:rgb(209, 216, 211);
+    color:rgb(80, 3, 66);
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+input,select{
+    margin:30px;
+    width:200px;
+    margin:10px 20px;
+}
+
+div{
+    color:rgb(97, 7, 85);
+    position: center;
+    width:550px;
+    height:200px;
+    border:1px;
+    padding:150px;
+    float:right;
+    margin:2px;
+}
+
+.form{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 3rem;
+    height: 100%;
+    text-align: center;
+    font-size:40px;
+}
+
+h1{
+    align-items: center;
+    margin-left: 500px;
+    width: 400px;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+button{
+    font-size:20px;
+    position:absolute;
+    background-color: #3b0338;
+    color: #fff;
+    border:none;
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 10px;
+    min-width: 100px;
+}
+
+input.button{
+    float:right;
+
+}
+

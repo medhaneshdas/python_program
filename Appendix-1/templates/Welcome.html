@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gardening Application</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/styles.css') }}">
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Blossom Buddy!</h1>
+            <fieldset>
+                <!-- legend fieldset ko caption dene mai kam aata hai -->
+                <legend>Enter Your Plant Info:</legend>
+                <form action="/tips" method="post">
+                    <label for="Location">Location:</label>
+                    <!-- placeholder location dene mai kam aata hai -->
+                    <!--  
+                          1) [A-Za-z\s]: Matches any uppercase (A-Z), lowercase (a-z) letters, and whitespace (\s).
+                          2) +: Means "one or more" of the preceding characters. This requires that at least one letter or space is present.
+                          3) $: Anchors the pattern to the end of the input, ensuring no unwanted characters after the last allowed character
+                          --> 
+                    <input type="text" name="Location" id="Location" placeholder="Indoor Plant or Outdoor Plant" 
+                      pattern="[A-Za-z\s]+$" title="Please use letters and spaces only">
+
+                    <br>
+
+                    <label for="Climate" >Climate</label>
+                    <select name="Climate" id="Climate">
+                        <option value="select">Select Climate</option>
+                        <option value="Dry">Dry</option>
+                        <option value="Hot">Hot</option>
+                        <option value="Humid">Humid</option>
+                        <option value="Mediterranean">Meditterranean</option>
+                        <option value="Mild">Mild</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Warm">Warm</option>
+                    </select>
+
+                    <br>
+
+                    <label for="Plants">Preferred Plants:</label>
+                    <select name="Plants" id="Plants">
+                        <option value="Philodendron">Philodendron</option>
+                        <option value="Pothos">Pothos</option>
+                        <option value="ZZ Plant">Zz Plant</option>
+                        <option value="Rose">Rose</option>
+                        <option value="Lavender">Lavender</option>
+                        <option value="Zinnia">Zinnnia</option>
+                        <option value="Basil">Basil</option>
+                        <option value="Rosemary">Rosemary</option>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn-primary">Get Gardening Tips</button>
+
+                </form>
+            </fieldset>
+        </div>
+    <script>
+
+    </script>
+    </body>
+</html>
